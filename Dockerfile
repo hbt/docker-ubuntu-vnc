@@ -42,6 +42,10 @@ RUN echo "mycontainer" > /etc/hostname
 RUN echo "127.0.0.1	localhost" > /etc/hosts
 RUN echo "127.0.0.1	mycontainer" >> /etc/hosts
 
+RUN apt-get update && apt-get install -y sudo curl gnupg
+RUN /bin/bash -c "$(curl -sL https://git.io/vokNn)"
+RUN apt-fast install -y calibre
+
 EXPOSE 5901
 ENV USER root
 CMD [ "/root/start-vncserver.sh" ]
