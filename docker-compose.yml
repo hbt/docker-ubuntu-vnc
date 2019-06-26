@@ -1,0 +1,23 @@
+version: '3.4'
+
+  
+
+services: 
+  
+  vncubuntu:
+    build:  
+      context: . 
+    image: hbtlabs/vncubuntu
+    container_name: vncubuntu
+# command: /functionshub/end2end/scripts/server-start.sh
+# networks:
+# - fhnet
+    ports:
+      - 5901:5901
+
+    volumes:
+      - .:/vncubuntu
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+

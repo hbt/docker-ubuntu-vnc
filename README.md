@@ -1,4 +1,16 @@
-README
+## FORK
+
+```bash
+docker-compose up --build
+./scripts/connect-vnc
+```
+
+
+
+======
+
+
+Original README
 ======
 
 This creates a Docker container with Ubuntu 18.04 and [TightVNC Server](https://tightvnc.com).
