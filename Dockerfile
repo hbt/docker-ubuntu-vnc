@@ -45,6 +45,7 @@ RUN echo "127.0.0.1	mycontainer" >> /etc/hosts
 RUN apt-get update && apt-get install -y sudo curl gnupg
 RUN /bin/bash -c "$(curl -sL https://git.io/vokNn)"
 RUN apt-fast install -y calibre
+RUN apt-fast install -y xdotool
 
 EXPOSE 5901
 ENV USER root
