@@ -1,3 +1,8 @@
+## DEPRECATED
+
+in favor of https://github.com/hbt/dockerfile-ubuntu-mate-tigervnc
+
+
 ## FORK
 
 ```bash
